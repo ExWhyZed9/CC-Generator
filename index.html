@@ -1,0 +1,79 @@
+<!-- Free Credit Card Generator created by ExWhyZed9 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Generator</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Credit Card Generator</h1>
+        <form>
+            <div class="mb-3">
+                <label for="bin">BIN</label>
+                <input type="text" class="form-control" id="bin" placeholder="Enter BIN (e.g., 562712)">
+            </div>
+          <!-- Free Credit Card Generator created by ExWhyZed9 -->
+
+            <div class="mb-3">
+                <label for="ccv">CCV</label>
+                <input type="text" class="form-control" id="ccv" placeholder="Leave blank for random">
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="month">Month</label>
+                    <select class="form-select" id="month">
+                        <option value="Random">Random</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+
+                    </select>
+                </div>
+              <!-- Free Credit Card Generator created by ExWhyZed9 -->
+
+                <div class="col-md-6 mb-3">
+                    <label for="year">Year</label>
+                    <select class="form-select" id="year">
+                        <option value="Random">Random</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
+                </div>
+            </div>
+          <!-- Free Credit Card Generator created by ExWhyZed9 -->
+            <div class="mb-3">
+                <label for="count">Count</label>
+                <input type="number" class="form-control" id="count" placeholder="Enter count (e.g., 20)">
+            </div>
+            <div class="mb-3">
+                <label for="output">Output</label>
+                <textarea class="form-control" id="output" rows="5" readonly></textarea>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary" onclick="generate()">Generate</button>
+                <button type="button" class="btn btn-secondary" onclick="copyOutput()">Copy Output</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://unpkg.com/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    </html>
